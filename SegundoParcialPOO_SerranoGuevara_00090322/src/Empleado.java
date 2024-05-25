@@ -1,7 +1,7 @@
 public class Empleado implements ComponentOrganizacional {
     private String nombre;
     private String puesto;
-    private double salario; // Changed from boolean to double
+    private double salario; 
 
     public Empleado(String nombre, String puesto, double salario) {
         this.nombre = nombre;
