@@ -5,7 +5,7 @@ public class Departamento implements ComponentOrganizacional {
     private String nombre;
     private List<ComponentOrganizacional> componentes;
 
-    // Proper constructor that initializes the 'nombre' and 'componentes' list
+  t
     public Departamento(String nombre) {
         this.nombre = nombre;
         this.componentes = new ArrayList<>();
