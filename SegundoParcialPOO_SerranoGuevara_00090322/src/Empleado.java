@@ -1,20 +1,13 @@
-public class Empleado {
+public class Empleado implements ComponentOrganizacional {
     private String nombre;
     private String puesto;
-    private boolean salario;
+    private double salario; // Changed from boolean to double
 
-    public Empleado(String nombre, String puesto, boolean salario){
+    public Empleado(String nombre, String puesto, double salario) {
         this.nombre = nombre;
         this.puesto = puesto;
         this.salario = salario;
-
     }
-
-    public Empleado(String alice, String desarrolladora, int i) {
-    }
-
-    //public String getNombre(){
-
 
     public String getNombre() {
         return nombre;
@@ -24,7 +17,7 @@ public class Empleado {
         return puesto;
     }
 
-    public boolean isSalario() {
+    public double getSalario() {
         return salario;
     }
 
@@ -36,9 +29,12 @@ public class Empleado {
         this.puesto = puesto;
     }
 
-    public void setSalario(boolean salario) {
+    public void setSalario(double salario) {
         this.salario = salario;
     }
 
-
+    @Override
+    public void mostrarEstructura() {
+        System.out.println("Empleado: " + nombre + ", Puesto: " + puesto + ", Salario: " + salario);
+    }
 }
